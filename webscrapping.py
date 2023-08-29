@@ -7,6 +7,7 @@ headers = {
     }
 import requests, json
 from bs4 import BeautifulSoup
+import re
 
 #url = 'https://portal.gupy.io/'
 
@@ -19,11 +20,6 @@ print("foi")
 #print(soup)
 print("\n\n")
 
-"""print(
-    soup.find("p", class_="pv-entity__secondary-title t-14 t-black t-normal")
-    .find_next(text=True)
-    .strip()
-)"""
 parent = soup.find("body").find("ul")
   
 # finding all <li> tags
@@ -32,6 +28,24 @@ nomes =[]
 titulos = parent.findAll(attrs={"aria-label": True} )
 for i in titulos:
     nomes.append(["aria-label"])
+#works well printing the jobs title
 
-print(nomes)
+trabalho =[]
+
+funcao = parent.findAll('div')
+for i in funcao:
+    
+    print(i.get_text())
+    print('\n')
+
+#funcao = parent.findAll('div', class_=lambda class_list: any(class_item.startswith('sc-d868c80d-5') for class_item in class_list))
+#funcao = parent.findAll('div', class_=re.compile('r\b' + 'sc-d868c80d-5'))
+#for i in funcao:
+#    trabalho.append([i])
+
+#print(len(funcao))
+#print(trabalho)
+
+#funcao = parent.findAll('div', text=lambda text: 'sc-d868c80d-5' in text)
+#print(nomes)
 #print(text[0])
