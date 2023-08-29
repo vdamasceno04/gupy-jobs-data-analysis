@@ -33,11 +33,27 @@ for i in titulos:
 trabalho =[]
 
 funcao = parent.findAll('div')
-for i in funcao:
-    
-    print(i.get_text())
-    print('\n')
+funcao_tratada = []
 
+for i in range(len(funcao)):
+    if i%4:
+       funcao_tratada.append(funcao[i])
+descricao =[]
+for i in funcao_tratada:
+    descricao.append((i.get_text()))
+
+
+links =[]
+prox = parent.findAll('a')
+for i in prox:
+    links.append(i.get('href'))
+
+#print(links)
+for i in range(len(links*4)):
+    print(descricao[i]);
+    if i%3: 
+        print(links[i])
+    print("\n")
 #funcao = parent.findAll('div', class_=lambda class_list: any(class_item.startswith('sc-d868c80d-5') for class_item in class_list))
 #funcao = parent.findAll('div', class_=re.compile('r\b' + 'sc-d868c80d-5'))
 #for i in funcao:
@@ -48,4 +64,4 @@ for i in funcao:
 
 #funcao = parent.findAll('div', text=lambda text: 'sc-d868c80d-5' in text)
 #print(nomes)
-#print(text[0])
+#print(text)
