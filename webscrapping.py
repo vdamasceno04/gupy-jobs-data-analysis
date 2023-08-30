@@ -16,7 +16,7 @@ def getJobInfo(joblist):
     joblistdivs = joblist.findAll('div') 
     #gets divs containing job info
     filtered_info = []
-    #this array will store 3 strings containing info from each announce: JOB NAME, WORKPLACE, JOB TYPE 
+    #this array will store 3 strings containing info from each announce: JOB NAME, LOCATION, JOB TYPE 
     for i in range(len(joblistdivs)):
         if i%4: #removes job announcement 
             filtered_info.append(joblistdivs[i].get_text())
@@ -30,10 +30,13 @@ def getApplyAddress(url, joblist):
         addresses.append(url+i.get('href'))
     return addresses
 
-def joinDataArrays(filtered_info, addresses):
+def joinDataArrays(url, filtered_info, addresses):
     finaldata =[]
+    url = url.replace('https://', '')
+    companyName = url.split('.gupy.io/', 1)[0] #get company's name from URL
     iter_address = iter(filtered_info)
     for i in range(len(addresses)):
+        finaldata.append(companyName)
         for j in range(0,3):
             finaldata.append((next(iter_address)))
         finaldata.append((addresses[i]))
