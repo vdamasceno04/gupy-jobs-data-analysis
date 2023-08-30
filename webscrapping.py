@@ -41,3 +41,10 @@ def joinDataArrays(url, filtered_info, addresses):
             finaldata.append((next(iter_address)))
         finaldata.append((addresses[i]))
     return finaldata
+
+def webscrape(url):
+    soup = getHtml(url)
+    joblist = separateJobList(soup)
+    filtered_info = getJobInfo(joblist)
+    addresses = getApplyAddress(url, joblist)
+    return(joinDataArrays(url, filtered_info, addresses))
