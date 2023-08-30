@@ -1,9 +1,5 @@
-import requests, json
+import requests
 from bs4 import BeautifulSoup
-
-#url = 'https://portal.gupy.io/'
-
-url = 'https://tigre.gupy.io/'
 
 def getHtml(url):
     req = requests.get(url)
@@ -26,7 +22,7 @@ def getJobInfo(joblist):
             filtered_info.append(joblistdivs[i].get_text())
     return filtered_info
 
-def getApplyAddress(joblist):
+def getApplyAddress(url, joblist):
     addresses =[]
     #this array will store the job candidature address
     jobsatributes = joblist.findAll('a')
@@ -42,9 +38,3 @@ def joinDataArrays(filtered_info, addresses):
             finaldata.append((next(iter_address)))
         finaldata.append((addresses[i]))
     return finaldata
-    
-a = getHtml('https://tigre.gupy.io/')
-b = separateJobList(a)
-c = getJobInfo(b)
-d = getApplyAddress(b)
-e = joinDataArrays(c, d)
