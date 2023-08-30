@@ -1,67 +1,50 @@
-headers = {
-    'Access-Control-Allow-Origin': '*',
-    'Access-Control-Allow-Methods': 'GET',
-    'Access-Control-Allow-Headers': 'Content-Type',
-    'Access-Control-Max-Age': '3600',
-    'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0'
-    }
 import requests, json
 from bs4 import BeautifulSoup
-import re
 
 #url = 'https://portal.gupy.io/'
 
 url = 'https://tigre.gupy.io/'
 
-req = requests.get(url, headers)
-soup = BeautifulSoup(req.content, 'html.parser')
+def getHtml(url):
+    req = requests.get(url)
+    soup = BeautifulSoup(req.content, 'html.parser')
+    #getting html
+    return soup
 
-print("foi")
-#print(soup)
-print("\n\n")
+def separateJobList(soup):
+    joblist = soup.find("body").find("ul") 
+    # this works as long as the job lists is the first list in the website
+    return joblist
 
-parent = soup.find("body").find("ul")
-  
-# finding all <li> tags
-text = list(parent.descendants)
-nomes =[]
-titulos = parent.findAll(attrs={"aria-label": True} )
-for i in titulos:
-    nomes.append(["aria-label"])
-#works well printing the jobs title
+def getJobInfo(joblist):
+    joblistdivs = joblist.findAll('div') 
+    #gets divs containing job info
+    filtered_info = []
+    #this array will store 3 strings containing info from each announce: JOB NAME, WORKPLACE, JOB TYPE 
+    for i in range(len(joblistdivs)):
+        if i%4: #removes job announcement 
+            filtered_info.append(joblistdivs[i].get_text())
+    return filtered_info
 
-trabalho =[]
+def getApplyAddress(joblist):
+    addresses =[]
+    #this array will store the job candidature address
+    jobsatributes = joblist.findAll('a')
+    for i in jobsatributes:
+        addresses.append(url+i.get('href'))
+    return addresses
 
-funcao = parent.findAll('div')
-funcao_tratada = []
-
-for i in range(len(funcao)):
-    if i%4:
-       funcao_tratada.append(funcao[i])
-descricao =[]
-for i in funcao_tratada:
-    descricao.append((i.get_text()))
-
-
-links =[]
-prox = parent.findAll('a')
-for i in prox:
-    links.append(i.get('href'))
-
-#print(links)
-for i in range(len(links*4)):
-    print(descricao[i]);
-    if i%3: 
-        print(links[i])
-    print("\n")
-#funcao = parent.findAll('div', class_=lambda class_list: any(class_item.startswith('sc-d868c80d-5') for class_item in class_list))
-#funcao = parent.findAll('div', class_=re.compile('r\b' + 'sc-d868c80d-5'))
-#for i in funcao:
-#    trabalho.append([i])
-
-#print(len(funcao))
-#print(trabalho)
-
-#funcao = parent.findAll('div', text=lambda text: 'sc-d868c80d-5' in text)
-#print(nomes)
-#print(text)
+def joinDataArrays(filtered_info, addresses):
+    finaldata =[]
+    iter_address = iter(filtered_info)
+    for i in range(len(addresses)):
+        for j in range(0,3):
+            finaldata.append((next(iter_address)))
+        finaldata.append((addresses[i]))
+    return finaldata
+    
+a = getHtml('https://tigre.gupy.io/')
+b = separateJobList(a)
+c = getJobInfo(b)
+d = getApplyAddress(b)
+e = joinDataArrays(c, d)
