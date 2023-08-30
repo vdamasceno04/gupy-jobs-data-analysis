@@ -1,6 +1,7 @@
 import webscrapping as ws
 import csvhandle
 import pagefinder
+import analysis
 import time
 
 FILEPATH = 'data.csv'
@@ -10,6 +11,12 @@ def makeurl(name):
     url = 'https://' + name + '.gupy.io/'
     return url
 
+csvhandle.initFile(FILEPATH)
+'''
+
+a = (analysis.whereLocated(FILEPATH))
+print (a)
+analysis.howManyCompanies(a)
 possible_visits =[]
 visited = []
 to_visit = []
@@ -32,4 +39,4 @@ while True:
         time.sleep(1)
     to_visit = []
     possible_visits = []
-    print(visited)
+    '''
