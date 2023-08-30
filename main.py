@@ -16,6 +16,7 @@ to_visit = []
 req = csvhandle.getVisited((FILEPATH))
 for i in req:
     visited.append(i)
+
 while True:
     possible_visits = pagefinder.findpages(URL)
     time.sleep(2)
@@ -27,7 +28,7 @@ while True:
         company_url = makeurl(k)
         scrapped = ws.webscrape(company_url)
         csvhandle.addInfo(scrapped, FILEPATH)
-        visited.append(j)
+        visited.append(k)
         time.sleep(1)
     to_visit = []
     possible_visits = []
