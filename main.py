@@ -3,16 +3,18 @@ import pandas as pd
 
 url = 'https://globo.gupy.io/'
 
-a = ws.getHtml(url)
-b = ws.separateJobList(a)
-c = ws.getJobInfo(b)
-d = ws.getApplyAddress(url, b)
-e = ws.joinDataArrays(url, c, d)
+scrapped = ws.webscrape(url)
 
 df = pd.read_csv('data.csv')
 print('csv: \n')
 
-new_record = ['Apple', 'CEO', 'Colombo', 'Trainee']
-df.loc[len(df)] = new_record
+new_record = []
+for i in scrapped:
+    new_record.append(i)
+    if len(new_record) == 5:
+        print(new_record)
+        df.loc[len(df)] = new_record
+        new_record = []
 
+df.to_csv('data.csv') #errado, bagunçando categorias
 print(df)

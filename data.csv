@@ -1,2 +1,45 @@
-Company, JobName, Location, JobType
-0, Globo, Jornlista, Sao Paulo, Full time employee
+,Company, JobName, Location, JobType, ApplyAddress
+0,globo,Agile Team Coach,Rio de Janeiro - RJ e Remoto,Banco de talentos,https://globo.gupy.io//jobs/1466752?jobBoardSource=gupy_public_page
+1,globo,Analista de Banco de Dados | DBDevOps ,Rio de Janeiro - RJ e Remoto,Efetivo,https://globo.gupy.io//jobs/5133887?jobBoardSource=gupy_public_page
+2,globo,Analista de Business Intelligence Sênior | Operações Comerciais,São Paulo - SP e Híbrido,Efetivo,https://globo.gupy.io//jobs/5286189?jobBoardSource=gupy_public_page
+3,globo,Analista de Dados Pleno | Inteligência de Mercado - Dados & Serviços,São Paulo - SP,Efetivo,https://globo.gupy.io//jobs/5221563?jobBoardSource=gupy_public_page
+4,globo,Analista de Gestão e Negócios Pleno | Canais de Esportes - Mais pessoas negras na Globo! ✊🏾,Rio de Janeiro - RJ,Efetivo,https://globo.gupy.io//jobs/5113134?jobBoardSource=gupy_public_page
+5,globo,Analista De Gestão Imobiliária e Ambiental Pleno | Gestão Imobiliária e Ambiental ,Rio de Janeiro - RJ,Efetivo,https://globo.gupy.io//jobs/5099407?jobBoardSource=gupy_public_page
+6,globo,Analista de Inteligência de Mercado Pleno | Bens de Consumo,São Paulo - SP e Híbrido,Efetivo,https://globo.gupy.io//jobs/5304043?jobBoardSource=gupy_public_page
+7,globo,Analista de Projetos de Efeitos Especiais Júnior | Tecnologia para Conteúdos,Rio de Janeiro - RJ,Efetivo,https://globo.gupy.io//jobs/5259650?jobBoardSource=gupy_public_page
+8,globo,Analista de Segurança da Informação Sênior | SOC,Rio de Janeiro - RJ e Híbrido,Efetivo,https://globo.gupy.io//jobs/4560372?jobBoardSource=gupy_public_page
+9,globo,Analista de Soluções de Mídias Júnior | Cloud & Automação (RJ) - Mais diversidade na Globo! ✊🏾👩🦾,Rio de Janeiro - RJ e Híbrido,Efetivo,https://globo.gupy.io//jobs/5307530?jobBoardSource=gupy_public_page
+10,globo,Analista de Soluções de Mídias Júnior | Programação e Exibição - Mais diversidade na Globo! ✊🏾👩🦾 ,Rio de Janeiro - RJ e Híbrido,Efetivo,https://globo.gupy.io//jobs/5339240?jobBoardSource=gupy_public_page
+11,globo,Assistente Administrativo | Aquisição e Governança de Direitos - Mais pessoas com deficiência na Globo!🦾,Rio de Janeiro - RJ,Efetivo,https://globo.gupy.io//jobs/5114215?jobBoardSource=gupy_public_page
+12,globo,Assistente de Operações Audiovisuais I | Plataforma de Produção de Conteúdo - Mais pessoas com deficiência na Globo!🦾,São Paulo - SP,Efetivo,https://globo.gupy.io//jobs/5307491?jobBoardSource=gupy_public_page
+13,globo,Banco de Talentos | Mais mulheres na Globo! 👩 ,São Paulo - SP,Banco de talentos,https://globo.gupy.io//jobs/3705891?jobBoardSource=gupy_public_page
+14,globo,Banco de Talentos | Mais pessoas com deficiência na Globo! 🦾,Rio de Janeiro - RJ e Remoto,Banco de talentos,https://globo.gupy.io//jobs/1509545?jobBoardSource=gupy_public_page
+15,globo,Banco de Talentos | Mais pessoas negras na Globo! ✊🏾,Rio de Janeiro - RJ e Remoto,Banco de talentos,https://globo.gupy.io//jobs/1509595?jobBoardSource=gupy_public_page
+16,globo,Cientista de Dados | Big Data & AI,Rio de Janeiro - RJ e Remoto,Banco de talentos,https://globo.gupy.io//jobs/1452395?jobBoardSource=gupy_public_page
+17,globo,Cientista de Dados Júnior | Soluções para o Consumidor e Inteligência,Rio de Janeiro - RJ e Híbrido,Efetivo,https://globo.gupy.io//jobs/5306410?jobBoardSource=gupy_public_page
+18,globo, Coordenadora Adtech |  Advertising - Mais mulheres na Globo! 👩,Rio de Janeiro - RJ e Híbrido,Efetivo,https://globo.gupy.io//jobs/5195051?jobBoardSource=gupy_public_page
+19,globo,Desenvolvedora Back-end Sênior | Jornada de Vendas - Mais mulheres na Globo! 👩,Rio de Janeiro - RJ e Híbrido,Efetivo,https://globo.gupy.io//jobs/5271408?jobBoardSource=gupy_public_page
+20,globo,Desenvolvedora Full Stack Pleno | Soluções RH e Artístico - Mais mulheres na Globo! 👩,Rio de Janeiro - RJ e Remoto,Efetivo,https://globo.gupy.io//jobs/4967629?jobBoardSource=gupy_public_page
+21,globo,Desenvolvedora Sênior | Plataformas Digitais - Mais mulheres na tecnologia!👩💻,Rio de Janeiro - RJ e Remoto,Efetivo,https://globo.gupy.io//jobs/4083766?jobBoardSource=gupy_public_page
+22,globo,Especialista de Planejamento |  Planejamento e Negócios - Mais mulheres na Globo! 👩,São Paulo - SP,Efetivo,https://globo.gupy.io//jobs/5303872?jobBoardSource=gupy_public_page
+23,globo,Montadora de Operações Cenográficas | Estúdios Globo - Mais mulheres na Globo 👩,Rio de Janeiro - RJ,Banco de talentos,https://globo.gupy.io//jobs/4485416?jobBoardSource=gupy_public_page
+24,globo,Pessoa Analista de Negócios - Segmentação de audiências em First-Party Data - NIP | Mais pessoas negras na Globo! ✊🏾 ,São Paulo - SP e Híbrido,Efetivo,https://globo.gupy.io//jobs/5238761?jobBoardSource=gupy_public_page
+25,globo,"Pessoa Desenvolvedora Android (G1, Globo.com, Gshow, Globoplay, GE, Cartola)",Rio de Janeiro - RJ e Remoto,Banco de talentos,https://globo.gupy.io//jobs/1463404?jobBoardSource=gupy_public_page
+26,globo,"Pessoa Desenvolvedora Back-end (G1, Globo.com, Gshow, Globoplay, GE, Cartola)",Rio de Janeiro - RJ e Remoto,Banco de talentos,https://globo.gupy.io//jobs/1459709?jobBoardSource=gupy_public_page
+27,globo,"Pessoa Desenvolvedora Front-end (G1, Globo.com, Gshow, Globoplay, GE, Cartola)",Rio de Janeiro - RJ e Remoto,Banco de talentos,https://globo.gupy.io//jobs/1459517?jobBoardSource=gupy_public_page
+28,globo,"Pessoa Desenvolvedora Full Stack (G1, Globo.com, Gshow, Globoplay, GE, Cartola)",Rio de Janeiro - RJ e Remoto,Banco de talentos,https://globo.gupy.io//jobs/1452367?jobBoardSource=gupy_public_page
+29,globo,Pessoa Desenvolvedora Full Stack Júnior - Home da Globo.com | Mais pessoas com deficiência na tecnologia! 🦾💻,Rio de Janeiro - RJ e Híbrido,Efetivo,https://globo.gupy.io//jobs/5333790?jobBoardSource=gupy_public_page
+30,globo,Pessoa Desenvolvedora Full Stack Pleno | Adtech - Mais pessoas negras na Globo! ✊🏾,Rio de Janeiro - RJ e Remoto,Efetivo,https://globo.gupy.io//jobs/5039590?jobBoardSource=gupy_public_page
+31,globo,Pessoa Desenvolvedora Full Stack Pleno – Data & AI | Mais pessoas com deficiência na tecnologia! 🦾💻,Rio de Janeiro - RJ e Remoto,Efetivo,https://globo.gupy.io//jobs/5315550?jobBoardSource=gupy_public_page
+32,globo,Pessoa Desenvolvedora Full Stack Pleno | GloboID - Mais pessoas com deficiência na tecnologia! 🦾💻,Rio de Janeiro - RJ e Remoto,Efetivo,https://globo.gupy.io//jobs/5130141?jobBoardSource=gupy_public_page
+33,globo,Pessoa Desenvolvedora Full Stack Pleno – Plataforma de Vídeo e Áudio | Mais pessoas com deficiência na tecnologia! 🦾💻 ,Rio de Janeiro - RJ e Remoto,Efetivo,https://globo.gupy.io//jobs/5322108?jobBoardSource=gupy_public_page
+34,globo,"Pessoa Desenvolvedora iOS (G1, Globo.com, Gshow, Globoplay, GE, Cartola)",Rio de Janeiro - RJ e Remoto,Banco de talentos,https://globo.gupy.io//jobs/1460144?jobBoardSource=gupy_public_page
+35,globo,Pessoa Engenheira de Dados | Big Data & AI,Rio de Janeiro - RJ e Remoto,Banco de talentos,https://globo.gupy.io//jobs/4797786?jobBoardSource=gupy_public_page
+36,globo,Pessoa Engenheira de dados Sênior - Data & AI | Mais pessoas com deficiência na tecnologia! 🦾💻 ,Rio de Janeiro - RJ e Remoto,Efetivo,https://globo.gupy.io//jobs/5314220?jobBoardSource=gupy_public_page
+37,globo,Pessoa Engenheira de Machine Learning | Big Data & AI,Rio de Janeiro - RJ e Remoto,Banco de talentos,https://globo.gupy.io//jobs/1452251?jobBoardSource=gupy_public_page
+38,globo,Pessoa Engenheira de Software | Big Data & AI,Rio de Janeiro - RJ e Remoto,Banco de talentos,https://globo.gupy.io//jobs/1452305?jobBoardSource=gupy_public_page
+39,globo,Pessoa Produtora de Tecnologia Audiovisual | Tecnologia para Conteúdo - Mais pessoas com deficiência na Globo! 🦾,São Paulo - SP,Temporário,https://globo.gupy.io//jobs/5179397?jobBoardSource=gupy_public_page
+40,globo,Product Owner Pleno | Projetos de Plataformas e Adtech,Rio de Janeiro - RJ e Híbrido,Efetivo,https://globo.gupy.io//jobs/5274625?jobBoardSource=gupy_public_page
+41,globo,Product Owner Sênior - Account Manager | Globo Technologies,Rio de Janeiro - RJ e Híbrido,Efetivo,https://globo.gupy.io//jobs/5240700?jobBoardSource=gupy_public_page
+42,globo,Product Owner Sênior | Advertising,Rio de Janeiro - RJ e Híbrido,Efetivo,https://globo.gupy.io//jobs/5356332?jobBoardSource=gupy_public_page
+43,globo,Supervisora de Operações Cenográficas | Estúdios Globo - Mais mulheres na Globo 👩,Rio de Janeiro - RJ,Banco de talentos,https://globo.gupy.io//jobs/4485693?jobBoardSource=gupy_public_page
