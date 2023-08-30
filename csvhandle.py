@@ -11,3 +11,13 @@ def addInfo(scrapped, filepath):
             new_record = [] #reset array
 
     df.to_csv(filepath, index=False) #sends dataframe to .csv file
+
+def getVisited(filepath):
+    visited = []
+    filtered_visited = []
+    df = pd.read_csv(filepath, usecols = ['Company'], low_memory = True)
+    visited = df.values.tolist()
+    for i in visited:
+        if i not in filtered_visited:
+            filtered_visited.append(i)
+    return filtered_visited
