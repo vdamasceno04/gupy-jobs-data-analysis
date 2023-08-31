@@ -1,4 +1,4 @@
-import webscrapping as ws
+import webscraping as ws
 import csvhandle
 import pagefinder
 import analysis
@@ -17,7 +17,7 @@ def makeurl(name):
 
 csvhandle.initFile(FILEPATH) #csv file setup
 
-visited = [] #store companies that were already webscrapped
+visited = [] #store companies that were already webscraped
 
 while True:
     possible_visits =[] #store gupy suggested companies
