@@ -12,21 +12,18 @@ def makeurl(name):
     return url
 
 csvhandle.initFile(FILEPATH)
-'''
 
-a = (analysis.whereLocated(FILEPATH))
-print (a)
-analysis.howManyCompanies(a)
-possible_visits =[]
 visited = []
-to_visit = []
+
 req = csvhandle.getVisited((FILEPATH))
 for i in req:
     visited.append(i)
 
 while True:
+    possible_visits =[]
+    to_visit = []
     possible_visits = pagefinder.findpages(URL)
-    time.sleep(2)
+    time.sleep(1)
     for j in possible_visits:
         if j not in visited:
             to_visit.append(j)
@@ -34,9 +31,8 @@ while True:
     for k in to_visit:
         company_url = makeurl(k)
         scrapped = ws.webscrape(company_url)
-        csvhandle.addInfo(scrapped, FILEPATH)
+        csvhandle.addRow(scrapped, FILEPATH)
         visited.append(k)
         time.sleep(1)
-    to_visit = []
-    possible_visits = []
-    '''
+    analysis.analyze(FILEPATH, 'Curitiba')
+
