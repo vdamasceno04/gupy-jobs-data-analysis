@@ -1,6 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
 
+#THIS FILE CONTAINS FUNCTIONS USED TO WEBSCRAPE A COMPANY'S JOBS OPENINGS, LOCATIONS, TYPES, AND URL TO APPLY
+
 def getHtml(url):
     req = requests.get(url)
     soup = BeautifulSoup(req.content, 'html.parser')

@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-url = 'https://portal.gupy.io/'
+#THIS FILE CONTAINS FUNCTIONS USED TO GET LINKS TO COMPANIES' PAGES TO BE SCRAPED
 
 def getHtml(url):
     req = requests.get(url)
@@ -15,7 +15,7 @@ def separateSuggestedCompanies(soup):
     return companies_list
 
 def getCompanyAddresses(companies_list):
-    addresses = [] #this array will store suggested companies gupy link
+    addresses = [] #this array will store suggested companies from gupy portal
     companies_attributes = companies_list.findAll('a')
     for i in companies_attributes:
         addresses.append(i.get('href'))
