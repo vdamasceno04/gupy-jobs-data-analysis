@@ -20,7 +20,7 @@ csvhandle.initFile(FILEPATH) #csv file setup
 visited = [] #store companies that were already webscraped
 
 while True:
-    possible_visits =[] #store gupy suggested companies
+    possible_visits = [] #store gupy suggested companies
     to_visit = [] #store companies from 'possible_visits' that weren't visited yet
     possible_visits = pagefinder.findpages(URL) 
     time.sleep(1) #these sleep functions block the execution due to rate-limiting  
